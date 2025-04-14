@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Montagem de Fotos de Namorados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: url('ima.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    h1 {
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+      margin-top: 30px;
+      font-size: 2em;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .foto {
+      flex: 1 1 100%;
+      max-width: 90%;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .foto:hover {
+      transform: scale(1.05);
+    }
+
+    .foto img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll;
+      }
+      h1 {
+        font-size: 1.5em;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Momentos com Você 💘</h1>
+
+  <!-- Música de fundo -->
+  <audio autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+  <div class="galeria">
+    <div class="foto">
+      <img src="uango.jpg" alt="Foto de um momento especial 1" />
+    </div>
+    <div class="foto">
+      <img src="contex.jpg" alt="Foto de um momento especial 2" />
+    </div>
+    <div class="foto">
+      <img src="global.jpg" alt="Foto de um momento especial 3" />
+    </div>
+  </div>
+</body>
+</html>
